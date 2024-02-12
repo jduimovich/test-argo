@@ -35,7 +35,7 @@ spec:
         argoInstance: default
         namespace: ${{ parameters.namespace}} 
         repoUrl: ${{ parameters.repoUrl}} 
-        path: 'argocd/'
+        path: './components/${{ parameters.appName }}/overlays/development'
   output:
     links:
       - title: Source Repository
